@@ -845,25 +845,18 @@
    
    fill: transparent;
    border-radius: 2px;
-   border: 1px solid rgb(var(--cl-modal-overlay));
+   border: 1px solid rgba(46, 47, 66, 0.4);
    
    transition: var(--anim-duration-basic);
    transition-property: background-color, border, fill;
   }
 
-  /* .checkbox-icon {
-     
-  } */
-
-  input[type="checkbox"]:checked + .agreement-label .checkbox {
+  input[type="checkbox"]:checked + .agreement-label > .checkbox {
      border: none;
-     background-color: var(--cl-primary-color);
-      fill: var(--cl-light);
+     background-color: var(--cl-pressed-state);
+      fill: #F4F4FD;
   }
 
-   /* input[type="checkbox"]:checked + .checkbox > .checkbox-icon {
-      
-    } */
 
   .text-link {
    color: var(--cl-primary-color);
